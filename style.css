@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: grid;
+    gap: 15px;
+    position: relative; /* Make the container a positioned parent */
+  }
+  
+  .form-container label {
+    font-weight: bold;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:10px;
+  }
+  
+  .sign-up-link {
+    position: absolute;
+    bottom: 10px; /* Adjust the bottom value to position the link */
+    right: 10px; /* Adjust the right value to position the link */
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
