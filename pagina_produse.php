@@ -1,6 +1,8 @@
 <?php
-$link = mysqli_connect("fdb1031.runhosting.com", "4396875_proiect", "myDatabse1", "4396875_proiect");
-
+if(!(isset($_COOKIE['authentificate']))){
+    header("Location: index.php");
+}
+$link = mysqli_connect("localhost", "hr", "123", "proiect");
 if (!$link) {
     die("Connection failed: " . mysqli_connect_error());
 }

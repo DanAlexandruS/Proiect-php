@@ -1,3 +1,9 @@
+<?php
+if(!(isset($_COOKIE['authentificate']))){
+    header("Location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>

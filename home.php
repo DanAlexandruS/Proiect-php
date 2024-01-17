@@ -1,3 +1,11 @@
+<?php
+
+if(!(isset($_COOKIE['authentificate']))){
+    header("Location: index.php");
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +16,10 @@
 <body>
 
     <header>
-        <a href="#cont">Cont</a>
-        <a href="#produse">Produse</a>
-        <a href="#comenzi">Comenzi</a>
-        <a href="#contact">Contact</a>
+        <a href="cont.php">Cont</a>
+        <a href="produse_list.php">Produse</a>
+        <a href="comanda.php">Comenzi</a>
+        <a href="contact.php">Contact</a>
     </header>
 
     <!-- Your page content goes here -->

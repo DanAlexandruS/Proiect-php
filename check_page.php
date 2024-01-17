@@ -1,7 +1,7 @@
 <?php
 
 
-$link = mysqli_connect("fdb1031.runhosting.com", "4396875_proiect", "myDatabse1", "4396875_proiect");
+$link = mysqli_connect("localhost", "hr", "123", "proiect");
 
 if (!$link) {
     die("Connection failed: " . mysqli_connect_error());
@@ -26,10 +26,15 @@ if ($check_result) {
 
        
         if (password_verify($password, $row['parola'])) {
+            session_start();
+            $_SESSION['user_id']=$foundId;
             $tip = $row['tip'];
+            setcookie('authentificate', $foundId, time() + 300, "/");
             if($tip == 'client')
                 header("Location: home.php");
             else{
+                 // Replace this with the actual user ID
+                setcookie('authentificate', $foundId, time() + 300, "/");
                 header("Location: admin.php");
             }
         } else {
